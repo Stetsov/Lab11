@@ -8,6 +8,32 @@
     android:padding="16dp"
     >
 
+    <ScrollView
+        android:id="@+id/scrollViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btn_add_view"
+        android:layout_marginTop="27dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ru.tpu.courses.lab2.Lab2ViewsContainer
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:overScrollMode="always"
+                android:scrollbarStyle="outsideInset"
+                android:scrollbars="vertical"
+                android:verticalScrollbarPosition="right"
+                app:lab2_minViewsCount="10"
+                />
+        </LinearLayout>
+    </ScrollView>
+
     <Button
         android:id="@+id/btn_add_view"
         android:layout_width="wrap_content"
@@ -18,20 +44,16 @@
         android:text="@string/lab2_btn_add_view"
         />
 
-    <ScrollView
-        android:id="@+id/scroll_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_below="@+id/btn_add_view"
-        android:layout_alignParentBottom="true"
-        >
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginRight="-2dp"
+        android:text="@string/lab2_btn_reset" />
 
-        <ru.tpu.courses.lab2.Lab2ViewsContainer
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:lab2_minViewsCount="10"
-            />
-    </ScrollView>
 </RelativeLayout>
