@@ -3,4 +3,8 @@
     <declare-styleable name="Lab2ViewsContainer">
         <attr name="lab2_minViewsCount" format="integer" />
     </declare-styleable>
+    <style name="lab2_view_primary">
+
+        <item name="android:colorBackground">#666666</item>
+    </style>
 </resources>
