@@ -1,4 +1,4 @@
-package ru.tpu.courses.lab3.adapter;
+package ru.tpu.android.lab3.adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import ru.tpu.courses.lab3.R;
+import ru.tpu.android.lab3.R;
 
 public class StudentHolder extends RecyclerView.ViewHolder {
 
