@@ -1,8 +1,10 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ru.tpu.courses.lab5">
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.tpu.android.lab5">
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application>
         <activity android:name=".Lab5Activity" />
+        <activity android:name=".RepoActivity" />
     </application>
 </manifest>
